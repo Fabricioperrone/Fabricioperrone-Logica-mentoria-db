@@ -6,7 +6,6 @@ public class jokenpo {
 
 	public static void main(String[] args) {
 		int jogador, computador;
-		int i;
 		final int papel = 0; // declaração constante
 		final int pedra = 1;
 		final int tesoura = 2;
