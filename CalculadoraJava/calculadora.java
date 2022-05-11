@@ -26,6 +26,7 @@ public class calculadora {
 		System.out.println("2 Subtração");
 		System.out.println("3 Multiplicação");
 		System.out.println("4 Divisão");
+		System.out.println("5 Potenciação");
 		
 		contador = scan.nextInt();
 		
@@ -50,6 +51,10 @@ public class calculadora {
 			
 			num3 = num1/num2;
 			System.out.println(num3);
+			break;
+		case 5:
+			num3 =   (int) Math.pow(num1, num2);  // (int) Math.pow(a,3)
+			System.out.println("O resultado da potenciação é: " + num3);
 			break;
 			
 		default:

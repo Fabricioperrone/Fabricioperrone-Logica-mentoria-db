@@ -1,0 +1,26 @@
+sistema de emprestimo de livros
+como funciona:
+
+1. classe livros, atributos:
+-Autor
+-Numero de paginas
+-Titulo
+-edicao
+
+
+---Classe Pessoa---
+
+1. Atributos
+- Nome
+- Endereco
+- Telefone
+- Email
+- contaBiblioteca
+
+-----Classe emprestimo----
+1.Atributos
+
+-prazoDeEntrega
+-livroIndisponivel
+-livroDisponivel
+

@@ -1,0 +1,94 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("----Exercício 7 ----");
+        System.out.println();
+        System.out.println("--FIBONACCI");
+        System.out.println();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Insira um valor: ");
+        int valorLimite = scan.nextInt();
+
+        int valorAnterior = 0;
+        int valorAtual = 0;
+        int proximo;
+        int valorFuturo = 0;
+
+
+        for (int i = 0; valorFuturo <= valorLimite; i++) {
+            switch (i){
+                case 0: {
+                    System.out.println(0);
+                    valorAnterior = 0;
+                    continue;
+                }
+                case 1: {
+                    System.out.println(1);
+                    valorAtual = 1;
+                    continue;
+                }
+                default: {
+                    proximo = valorAnterior + valorAtual;
+                    valorAnterior = valorAtual;
+                    valorAtual = proximo;
+                    valorFuturo = valorAtual + valorAnterior;
+                    System.out.println(proximo);
+                    break;
+                }
+            }
+        }
+        System.out.println("FIM");
+    }
+}
+fibonnaci
+
+------------------------------------------------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("----Exercício 7 ----");
+        System.out.println();
+        System.out.println("--FIBONACCI");
+        System.out.println();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Insira um valor: ");
+        int tamanhoDaSequencia = scan.nextInt();
+
+        int valorAnterior = 0;
+        int valor = 0;
+        int proximo;
+
+
+        for (int i = 0; i < tamanhoDaSequencia; i++) {
+            switch (i){
+                case 0: {
+                    System.out.println(0);
+                    valorAnterior = 0;
+                    continue;
+                }
+                case 1: {
+                    System.out.println(1);
+                    valor = 1;
+                    continue;
+                }
+                default: {
+                    proximo = valorAnterior + valor;
+                    valorAnterior = valor;
+                    valor = proximo;
+                    System.out.println(proximo);
+                    break;
+                }
+            }
+        }
+        System.out.println("FIM");
+    }
+}

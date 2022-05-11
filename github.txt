@@ -1,0 +1,7 @@
+git 
+exe 14 nao
+exe 13  ainda não está ok
+exe 12 não sobe refatoração ava. Paulo / pode usar função
+exe 11 
+
+idade

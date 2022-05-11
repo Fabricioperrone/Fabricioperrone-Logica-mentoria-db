@@ -1,0 +1,54 @@
+package mentoria;
+
+public class area {
+
+	int quadrado;
+	double circulo = 3.14;
+	int triangulo;
+	// contrutor já com  paramêtros
+	public area(int altura, int raio, int base) {
+		this.quadrado = altura*altura;
+		this.circulo = raio * raio;
+		this.triangulo = (base * altura)/2;
+	}
+	
+	public int getQuadrado() {
+		return quadrado;
+	}
+	public void setQuadrado(int quadrado) {
+		this.quadrado = quadrado;
+	}
+	public int getCirculo() {
+		return (int) circulo;
+	}
+	public void setCirculo(int circulo) {
+		this.circulo = circulo;
+	}
+	public int getTriangulo() {
+		return triangulo;
+	}
+	public void setTriangulo(int triangulo) {
+		this.triangulo = triangulo;
+	}
+	
+	
+}
+-----Segunda parte------
+package mentoria;
+
+
+
+public class testaArea {
+
+	public static void main(String[] args) {
+		
+		area somadoscantos = new area(5,2,3);
+	
+		
+		System.out.println("Área do quadrado: "+somadoscantos.getQuadrado());
+		System.out.println("área do circulo: " +somadoscantos.getCirculo());
+		System.out.println("Área do triangulo: "+somadoscantos.getTriangulo());
+		
+	}
+
+}

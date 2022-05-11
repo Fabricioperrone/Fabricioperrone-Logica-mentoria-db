@@ -1,0 +1,49 @@
+public abstract Funcionario {
+ privado String nome;
+ privado Dobule salario;
+
+// construtor 
+public Funcionario(String nome, double salario) {
+ this.nome = nome;
+ this.salario = salario;
+}
+
+// metodo
+public void receberSalario(Double valor) {
+ this.salario = valor;
+}
+
+public void setNome(String nome) {
+ this.nome = nome;
+}
+
+public void getNome() {
+ return this.nome;
+}
+
+public void getSalario() {
+ return this.salario;
+}
+
+
+
+
+
+public class Estagiario extends Funcionario {
+
+	public Estagiario (String nome, double salario) 
+		super(nome, salario)
+	}
+
+
+}
+
+public class Clt exntes Funcionario{
+ 	public Clt(String nome, double salario)
+		super(nome, salario)
+
+@overwide
+public void receberSalario(Double valor) `
+	this.salario = valor + (valor * 0.3)ç
+}
+
